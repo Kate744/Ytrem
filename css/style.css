@@ -1,0 +1,8 @@
+table {
+    border: 4px solid #2F4F4F;
+    border-collapse: collapse;
+}
+
+td {
+    border: 3px solid #708090;
+}
