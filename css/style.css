@@ -16,12 +16,12 @@ body {
     align-items: center;
 }
 
-.navigation-menu li {
+.navigation-menu > li {
+  position: relative;
   display: inline-block;
   margin-right: 20px;
   white-space: nowrap;
-
-
+  font-size: 16px;
 }
 
 .navigation-menu a {
@@ -36,7 +36,17 @@ body {
 .navigation-menu a:hover {
     background: #6600ff;
 }
-
+.navigation-menu .sub-menu {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background: #fcf8e3;
+      display: none;
+}
+.navigation-menu > li:hover .sub-menu {
+    display: block;
+}
 
 table {
     border: 4px solid #2F4F4F;
